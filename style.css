@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&family=Montserrat&display=swap");
+
+:root {
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
+header,
+h1 {
+  color: var(--gray1);
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+h1,
+p,
+button {
+  letter-spacing: -0.035em;
+  font-family: Space Mono;
+}
+
+header,
+p {
+  font-size: 1.5em;
+}
+
+header,
+button {
+  text-transform: uppercase;
+}
+
+header {
+  font-family: Inconsolata;
+  line-height: 1.042em;
+  letter-spacing: -0.08em;
+  margin: 40px 0 0 77px;
+}
+
+img {
+  width: 100%;
+  max-width: 539px;
+  height: auto;
+  align-self: flex-start;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 95px;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  line-height: 36px;
+  color: var(--gray2);
+  width: 381px;
+}
+
+button {
+  background-color: var(--gray1);
+  color: #ffffff;
+  border: 0;
+  width: 216px;
+  height: 68px;
+}
+
+footer {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.main-container {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 200px 119px 0px 77px;
+}
+
+.text-container {
+  margin-left: 100px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+@media (max-width: 834px) {
+  body {
+    background-color: lightpink;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
+  header {
+    padding: 24px 0 60px 22px;
+    margin: 0;
+  }
+
+  img {
+    max-width: 287px;
+    align-self: center;
+  }
+
+  h1 {
+    padding-top: 60px;
+    font-size: 3em;
+    line-height: 71px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 27px;
+    width: 328px;
+    padding-top: 1.5em;
+  }
+
+  button {
+    margin-top: 4em;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    justify-content: space-evenly;
+  }
+}
